@@ -38,3 +38,4 @@ print("Accuracy:", accuracy_score(y_test, predictions))
 msg = ["Congratulations! You won a free prize"]
 msg_vec = vectorizer.transform(msg)
 print("Spam" if model.predict(msg_vec)[0] == 1 else "Not Spam")
+
